@@ -59,7 +59,7 @@ namespace GuessNumberForm
             if (result_ == DialogResult.Yes)
             {
                 MessageBox.Show($"Ура ваше число - {listValues[0]}");
-                Application.Exit();
+               Application.Exit();
             }
             if (result_ == DialogResult.No)
             {

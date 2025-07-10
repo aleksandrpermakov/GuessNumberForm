@@ -8,8 +8,7 @@ namespace GuessNumberForm
 {
     public class GuessValue
     {
-        //public static int half = 1; //панирируемый центр листа
-       // public static List<int> values_ = new List<int>();   
+        
        public static List<int> ListValues(int length) // создаем лист со всеми возможными вариатами ответа
         {
             List<int> values = new List<int>();
@@ -24,12 +23,7 @@ namespace GuessNumberForm
         public static int GetHalf(List<int> values) // по факту метод находит середину листа
         {
             int half = values.Count;
-            
-            if (values.Count > 2)
-            {  
-                half = half / 2; 
-            }
-            
+            half = half / 2; 
             return values [half]; 
         }
         public static List<int> RightListValues(List<int> list, int value)
